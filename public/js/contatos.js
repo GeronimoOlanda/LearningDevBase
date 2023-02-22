@@ -1,5 +1,14 @@
-//learning angular
-//A module is created by using the AngularJS function angular.module
+
+/* 
+  * ng-app directive defines an AngularJS application.
+  * ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+  * ng-bind directive binds application data to the HTML view
+  * learning angular
+  * A module is created by using the AngularJS function angular.module
+  * Quando adicionamos a propriedade $scope, as views passam a ter acesso as nossas propriedades daquela controller
+  * In the view, you do not use the prefix $scope, you just refer to a property name, like {{carname}}.
+*/
+
 var app = angular.module("myApp", []);
 
 app.controller("myController", function($scope){
