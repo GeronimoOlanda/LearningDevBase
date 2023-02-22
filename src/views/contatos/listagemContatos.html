@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Contatos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="../../../public/images/icondev.png">
+    <!-- css -->
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="stylesheet" href="../../../public/css/contact.css">
   </head>
   <body>
       <!-- 
@@ -14,10 +17,13 @@
         * ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
         * ng-bind directive binds application data to the HTML view
       -->
-    <div ng-app="">
-      <p>Name : <input type="text" ng-model="name"></p>
-      <h1>Hello {{name}}</h1>
+    <div ng-app="myApp" ng-controller="myController" style="text-align: center;" id="app">
+      <h2 style="margin-top: 50px;">Estamos Aprendendo AngularJS</h2>
+    
+      <p style="margin-top: 100px;"> <span id="text"> Texto: </span> {{firstName + " " + secondName}}</p>
     </div>
 
+        <!-- scritps -->
+        <script src="../../../public/js/contatos.js"></script>
   </body>
 </html>

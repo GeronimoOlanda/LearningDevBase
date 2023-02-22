@@ -47,3 +47,8 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+#text{
+  font-weight: 900;
+  font-size: 30px;
+}
