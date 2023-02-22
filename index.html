@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geronimo Olanda</title>
+    <!-- icon-->
+    <link rel="icon" type="image/x-icon" href="./public/images/icondev.png">
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <!-- scripts-->
+    <!--<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="./index.html" style="border-bottom: 1px solid blue;">Pagina Inicial</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Aplicações</a></li>
+            <li><a href="./src/views/contatos.html">Contatos</a></li>
+            <li><a href="#">Login/Cadastro</a></li>
+            <hr style="margin-top: 10px">
+          </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <h1 id="mainh1">Learning to be FullStack</h1>
+        <section>
+          <section id="littleForm" style="margin-left: 43%; margin-bottom: 20px;">
+            <label for="msg">Digite sua mensagem:</label> <br>
+            <input type="text" id="nome">
+            <button id="btnEnviar">enviar</button>
+          </section>
+          
+          <div id="content">
+            <div id="result"></div><br>
+            <hr id="hrline" style="margin-bottom: 20px;">
+            <div id="message">
+              <p>
+                This is how God showed his love among us: He sent his one and only Son into the world that we might live through him.
+                1 John 4:9
+              </p><br>
+              <p>
+                I give them eternal life, and they shall never perish; no one will snatch them out of my hand. My Father, who has given them to me, is greater than all; no one can snatch them out of my Father’s hand. I and the Father are one.
+              </p><br>
+              <p>
+                Fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God.
+              </p><br>
+              <p>
+                Jesus looked at them and said, “With man this is impossible, but not with God; all things are possible with God.”
+              </p>
+            </div>
+            
+          </div>
+
+      </section>
+    </main>
+
+    <hr id="hrline" style="margin-top: 50px;">
+
+  <div id="musicVideo">
+    <h2>Audios/Videos</h2><br>
+    <label for="audio">Seção de Musica</label>
+    <section id="audio">
+      <audio controls autoplay muted>
+        <source src="./public/audio/50centAudio.mp3" type="audio/ogg">
+        <source src="./public/audio/50centAudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <hr id="hrline">
+
+    <section id="video">
+      <div id="textocss">
+        <p id="titulo" style="text-align: center; font-weight: 800;"></p>
+        <p id="text"></p>
+      </div>
+    </section>
+    <hr id="hrline">
+  </div>
+
+    <!-- scritps -->
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>
