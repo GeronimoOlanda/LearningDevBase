@@ -20,7 +20,9 @@
     <div ng-app="myApp" ng-controller="myController" style="text-align: center;" id="app">
       <h2 style="margin-top: 50px;">Estamos Aprendendo AngularJS</h2>
     
-      <p style="margin-top: 100px;"> <span id="text"> Texto: </span> {{firstName + " " + secondName}}</p>
+      <p style="margin-top: 100px;"> <span id="text"> Texto: </span> {{firstName + " " + secondName}}{{message}}</p>
+      
+      <button ng-click="changeName(true, false)">Mudar Nome</button>
     </div>
 
         <!-- scritps -->
