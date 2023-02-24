@@ -18,7 +18,7 @@ $timeout to execute timeaout
 
 var app = angular.module("myApp", []);
 
-app.controller("myController", function($scope, $location){
+app.controller("myController", function($scope){
   debugger;
   $scope.firstName = "Geronimo";
   $scope.secondName = "Olanda";
@@ -45,7 +45,7 @@ app.controller("myController", function($scope, $location){
     }
   }
   // Working with Services
-    $scope.UrlAtual = $location.absUrl(); // get the absolute url
+    //$scope.UrlAtual = $location.absUrl(); // get the absolute url
 
     //actually execute a http request
     /*
@@ -60,6 +60,15 @@ app.controller("myController", function($scope, $location){
       }, 2000);
    */
 
+let listaItens = [];
+  $scope.btnCadastrar = function() {
+    let item = document.getElementById("itens").value;
+      listaItens.push(item);
+
+    
+  };
+
+  $scope.lista = listaItens;
 
 });
 

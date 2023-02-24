@@ -21,7 +21,20 @@
       <div>
         {{myWelcome}}
       </div>
+
       <button ng-click="changeName(true, false)">Mudar Nome</button>
+      <hr>
+     <div id="itensLista">
+        <input type="text" id="itens">
+
+        
+         <button id="btnCadastrar" ng-click="btnCadastrar()">Cadastrar Item</button>
+     
+         <ul ng-repeat="Itens in lista">
+          <li>{{Itens}}</li>
+        </ul>
+
+        </div>
     </div>
 
         <!-- scritps -->
