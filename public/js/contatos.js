@@ -9,9 +9,16 @@
   * In the view, you do not use the prefix $scope, you just refer to a property name, like {{carname}}.
 */
 
+/* 
+services in angularjs are methods used to execute somethings
+$location get the actual location at page
+$http execute http request or response
+$timeout to execute timeaout
+*/
+
 var app = angular.module("myApp", []);
 
-app.controller("myController", function($scope){
+app.controller("myController", function($scope, $location){
   debugger;
   $scope.firstName = "Geronimo";
   $scope.secondName = "Olanda";
@@ -37,4 +44,23 @@ app.controller("myController", function($scope){
     
     }
   }
+  // Working with Services
+    $scope.UrlAtual = $location.absUrl(); // get the absolute url
+
+    //actually execute a http request
+    /*
+      $http.get("https://www.youtube.com/watch?v=sAYuOc7_TKg").then(function (response) {
+      $scope.myWelcome = response.data;
+    });
+    */
+
+    /*
+      $timeout(function () {
+      $scope.myHeader = "How are you today?";
+      }, 2000);
+   */
+
+
 });
+
+
