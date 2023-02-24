@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Contatos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="../../../public/images/icondev.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../../public/images/icondev.png"
+    />
     <!-- css -->
-    <link rel="stylesheet" href="../../../public/css/styles.css">
-    <link rel="stylesheet" href="../../../public/css/contact.css">
+    <link rel="stylesheet" href="../../../public/css/styles.css" />
+    <link rel="stylesheet" href="../../../public/css/contact.css" />
   </head>
   <body>
+    <div
+      ng-app="myApp"
+      ng-controller="myController"
+      style="text-align: center"
+      id="app"
+    >
+      <h2 style="margin-top: 50px">Estamos Aprendendo AngularJS</h2>
 
-    <div ng-app="myApp" ng-controller="myController" style="text-align: center;" id="app">
-      <h2 style="margin-top: 50px;">Estamos Aprendendo AngularJS</h2>
-    
-      <p style="margin-top: 100px;"> <span id="text"> Texto: </span> {{firstName + " " + secondName}}{{message}}</p>
+      <p style="margin-top: 100px">
+        <span id="text"> Texto: </span> {{firstName + " " +
+        secondName}}{{message}}
+      </p>
       <p>Currente Url: <span>{{UrlAtual}}</span></p>
-      <div>
-        {{myWelcome}}
-      </div>
+      <div>{{myWelcome}}</div>
 
       <button ng-click="changeName(true, false)">Mudar Nome</button>
-      <hr>
-     <div id="itensLista">
-        <input type="text" id="itens">
+      <hr />
+      <div id="itensLista">
+        <input type="text" id="itens" />
 
-        
-         <button id="btnCadastrar" ng-click="btnCadastrar()">Cadastrar Item</button>
-     
-         <ul ng-repeat="Itens in lista">
+        <button id="btnCadastrar" ng-click="btnCadastrar()">
+          Cadastrar Item
+        </button>
+
+        <ul ng-repeat="Itens in lista">
           <li>{{Itens}}</li>
         </ul>
+      </div>
+      <div id="workwithObject">
+        <!-- selecionando um dos itens e atraves do selectedMember já pegando o id do selecionado -->
+        <select ng-model="selectedMember" >
+          <option ng-repeat="item in FamilyMambers" value="{{item.id}}">{{item.member}} : {{item.name}}</option>
+        </select>
 
-        </div>
+        <h3> {{ selectedMember }}</h3>
+      </div>
     </div>
 
-        <!-- scritps -->
-        <script src="../../../public/js/contatos.js"></script>
+    <!-- scritps -->
+    <script src="../../../public/js/contatos.js"></script>
   </body>
 </html>
