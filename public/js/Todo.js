@@ -15,7 +15,7 @@ app.controller("todoController", ($scope) => {
     $scope.todoInput = "";
 
     };
-    $scope.remove = function() {
+    $scope.remove = () => {
       var oldList = $scope.todoList;
       $scope.todoList = [];
       angular.forEach(oldList, function(x) {
