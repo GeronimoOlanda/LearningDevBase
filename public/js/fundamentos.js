@@ -9,3 +9,11 @@ const DadosCompletos = {
   TemploFrequentado: "Congregação Cristã no Brasil",
   AnosImportantes: [2023, 2019, 2020, "08/04/2022"] 
 }
+
+console.log(nome);
+console.log("------------------------------------------------------------------------------------------");
+for(let item in ListaAlimentos){
+  console.log(`Alimento: ${ListaAlimentos[item]}`);
+}
+console.log("------------------------------------------------------------------------------------------");
+console.log(`Nome: ${DadosCompletos.NomeCompleto}`);
