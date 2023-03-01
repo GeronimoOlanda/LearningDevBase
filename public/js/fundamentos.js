@@ -17,3 +17,17 @@ for(let item in ListaAlimentos){
 }
 console.log("------------------------------------------------------------------------------------------");
 console.log(`Nome: ${DadosCompletos.NomeCompleto}`);
+
+console.log("------------------------------------------------------------------------------------------");
+const vazio = "Vazio";
+let showHiddenElement = (findElement = ["Vazio"]) => {
+
+  findElement.forEach(element => {
+    if(element == vazio){
+      console.log(" nossa lista esta vazia");
+    }else{
+      console.log(element);
+    }
+  });
+}
+showHiddenElement(['teste1']);
